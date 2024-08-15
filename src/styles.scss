@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@use "@carbon/styles/scss/config" with (
+  $use-flexbox-grid: true,
+  $font-path: "@ibm/plex"
+    // Since Angular doesn't support `~` imports anymore, we can rewrite the path by updating the config
+);
+
+@use "@carbon/styles";
